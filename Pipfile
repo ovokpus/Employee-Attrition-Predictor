@@ -8,6 +8,7 @@ pandas = "*"
 numpy = "*"
 sklearn = "*"
 openpyxl = "*"
+feature-engine = "*"
 
 [dev-packages]
 

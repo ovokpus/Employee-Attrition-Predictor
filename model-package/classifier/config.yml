@@ -1,0 +1,44 @@
+# Package Overview
+package_name: classifier
+
+# Data Files
+raw_data_file: raw.csv
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: attrition
+
+pipeline_name: employee_attrition_classification_model
+pipeline_save_file: employee_attrition_classification_model_output_v
+
+features:
+  - satisfaction_level
+  - last_evaluation
+  - number_project
+  - average_montly_hours	
+  - time_spend_company
+  - Work_accident
+  - promotion_last_5years
+  - dept	
+  - salary
+
+# set train/test split
+test_size: 0.1
+
+# to set the random seed
+random_state: 0
+
+numerical_vars:
+  - satisfaction_level
+  - last_evaluation
+  - number_project
+  - average_montly_hours
+  - time_spend_company
+  - Work_accident
+  - promotion_last_5years
+
+categorical_vars:
+  - dept
+  - salary

@@ -2,13 +2,13 @@ import typing as t
 
 import pandas as pd
 
-from classification_model import __version__ as _version
-from classification_model.config.core import config
-from classification_model.processing.data_manager import load_pipeline
-from classification_model.processing.validation import validate_inputs
+from classifier import __version__ as _version
+from classifier.config.core import config
+from classifier.processing.data_manager import load_pipeline
+from classifier.processing.validation import validate_inputs
 
 pipeline_file_name = f"{config.app_config.pipeline_save_file}{_version}.pkl"
-_titanic_pipe = load_pipeline(file_name=pipeline_file_name)
+_attrition_pipe = load_pipeline(file_name=pipeline_file_name)
 
 
 def make_prediction(
@@ -22,7 +22,7 @@ def make_prediction(
     results = {"predictions": None, "version": _version, "errors": errors}
 
     if not errors:
-        predictions = _titanic_pipe.predict(
+        predictions = _attrition_pipe.predict(
             X=validated_data[config.model_config.features]
         )
         results = {

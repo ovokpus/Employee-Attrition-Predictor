@@ -17,7 +17,7 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
 
     try:
         # replace numpy nans so that pydantic can validate
-        MultipleTitanicDataInputs(
+        MultipleAttritionDataInputs(
             inputs=validated_data.replace({np.nan: None}).to_dict(orient="records")
         )
     except ValidationError as error:

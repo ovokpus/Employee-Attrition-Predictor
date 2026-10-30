@@ -1,5 +1,7 @@
 # 🧭 Employee Attrition Predictor
 
+<p align="center"><img src="docs/assets/hero.svg" alt="Employee Attrition Predictor" width="100%"/></p>
+
 **Estimate how likely an employee is to leave, from satisfaction, workload, tenure and pay band. Training is tracked in MLflow, the model is served from the MLflow registry, and everything runs locally with one command.**
 
 This began as an ML Zoomcamp (DataTalks.Club) mid-term project: notebooks plus a scikit-learn/feature-engine model package. It's now a full local stack: **uv** for Python dependencies, an **MLflow** tracking server and model registry, a **training job** that logs every run, a **FastAPI** service that loads the `@champion` model, and a **React** front end.
@@ -54,6 +56,8 @@ curl -X POST localhost:8000/predict -H 'content-type: application/json' -d '{"em
 ![Swagger docs](docs/screenshots/api-docs.png)
 
 ## Architecture
+
+<p align="center"><img src="docs/assets/flow.svg" alt="Employee Attrition Predictor data flow" width="100%"/></p>
 
 ```mermaid
 flowchart LR

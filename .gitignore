@@ -133,3 +133,11 @@ dmypy.json
 *.pdf
 
 **/.ipynb_checkpoints/**
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+web/dist/
+mlruns/
+mlartifacts/

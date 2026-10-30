@@ -1,0 +1,6 @@
+.venv
+web
+.git
+**/__pycache__
+legacy
+docs

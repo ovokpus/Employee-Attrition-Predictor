@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #0f172a; color: #e2e8f0; }
+.page { max-width: 1150px; margin: 0 auto; padding: 32px; }
+header h1 { margin: 0 0 4px; font-size: 30px; }
+header p { margin: 0; color: #94a3b8; }
+.presets { display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
+.ghost { background: #1e293b; color: #c7d2fe; border: 1px solid #4f46e5; border-radius: 999px; padding: 6px 14px; cursor: pointer; font-size: 13px; }
+.grid { display: grid; grid-template-columns: 3fr 2fr; gap: 20px; }
+.side { display: flex; flex-direction: column; gap: 20px; }
+.card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 20px; }
+.card h2 { margin: 0 0 14px; font-size: 17px; }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; font-size: 14px; color: #cbd5e1; flex: 1; }
+.field span { display: flex; justify-content: space-between; }
+.field b { color: #a5b4fc; }
+input[type=range] { accent-color: #818cf8; }
+select { background: #0f172a; color: #e2e8f0; border: 1px solid #475569; border-radius: 8px; padding: 8px; }
+.row2 { display: flex; gap: 16px; }
+.check { font-size: 14px; color: #cbd5e1; flex: 1; display: flex; gap: 8px; align-items: center; }
+.big { font-size: 56px; font-weight: 800; }
+.result.high .big { color: #f87171; } .result.medium .big { color: #fbbf24; } .result.low .big { color: #4ade80; }
+.meter { height: 10px; background: #0f172a; border-radius: 5px; overflow: hidden; }
+.meter div { height: 100%; background: linear-gradient(90deg, #4ade80, #fbbf24, #f87171); transition: width .3s; }
+.verdict { color: #cbd5e1; }
+.mono { font-family: ui-monospace, monospace; font-size: 13px; color: #a5b4fc; }
+table { width: 100%; font-size: 13px; border-collapse: collapse; margin-bottom: 12px; }
+td { padding: 4px 0; border-bottom: 1px solid #334155; } td:last-child { text-align: right; color: #e2e8f0; } td:first-child { color: #94a3b8; }
+a { color: #a5b4fc; font-size: 14px; }
+.err { color: #fca5a5; }

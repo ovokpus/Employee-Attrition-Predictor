@@ -10,6 +10,10 @@ This began as an ML Zoomcamp (DataTalks.Club) mid-term project: notebooks plus a
 
 ---
 
+## Business case
+
+Replacing an employee is expensive, and many departures could be prevented with an earlier conversation. This project estimates attrition risk from satisfaction, workload, tenure and pay band, with every training run tracked in MLflow and the served model pinned to a registry alias. It is a teaching model, and using it on real people needs strong privacy and fairness controls. [docs/BUSINESS_CASE.md](docs/BUSINESS_CASE.md) covers the sourced cost of turnover, use cases, an illustrative ROI model and the limits.
+
 ## Quick start
 
 ```bash

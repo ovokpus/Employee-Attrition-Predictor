@@ -1,6 +1,6 @@
-<p align="center"><img src="assets/banner.jpg" alt="Stack of manila folders with a brass drafting compass beside an hourglass on a dark surface" width="100%"></p>
-
 # 🧭 Employee Attrition Predictor
+
+<p align="center"><img src="assets/banner.jpg" alt="Stack of manila folders with a brass drafting compass beside an hourglass on a dark surface" width="100%"></p>
 
 <p align="center"><img src="docs/assets/hero.svg" alt="Employee Attrition Predictor" width="100%"/></p>
 

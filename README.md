@@ -1,5 +1,7 @@
 # 🧭 Employee Attrition Predictor
 
+<p align="center"><img src="assets/banner.jpg" alt="Stack of manila folders with a brass drafting compass beside an hourglass on a dark surface" width="100%"></p>
+
 <p align="center"><img src="docs/assets/hero.svg" alt="Employee Attrition Predictor" width="100%"/></p>
 
 **Estimate how likely an employee is to leave, from satisfaction, workload, tenure and pay band. Training is tracked in MLflow, the model is served from the MLflow registry, and everything runs locally with one command.**
